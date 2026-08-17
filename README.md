@@ -1,8 +1,8 @@
-# IBM Emotion Detection Application
+# Final Project - IBM Emotion Detection Application
 
 ## Project Overview
 
-This is the IBM Emotion Detection Application created as part of the Coursera/IBM Skills Network final project. The application uses Watson's Natural Language Processing (NLP) service to analyze text and detect five key emotions: anger, disgust, fear, joy, and sadness.
+This is the Final Project for the Coursera/IBM Skills Network course "Developing AI Applications with Python and Flask". The IBM Emotion Detection Application uses Watson's Natural Language Processing (NLP) service to analyze text and detect five key emotions: anger, disgust, fear, joy, and sadness. The application uses Watson's Natural Language Processing (NLP) service to analyze text and detect five key emotions: anger, disgust, fear, joy, and sadness.
 
 ## Features
 
@@ -36,7 +36,7 @@ EmotionDetectionProject/
 
 1. **Clone the repository**:
 ```bash
-git clone https://github.com/brovk2008/emotion-detection-project.git
+git clone https://github.com/NguyenQS504092s/oaqjp-final-project-emb-ai.git
 cd EmotionDetectionProject
 ```
 
