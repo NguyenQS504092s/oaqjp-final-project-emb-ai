@@ -1,7 +1,7 @@
 """Unit tests for EmotionDetection module."""
 import unittest
 from unittest.mock import patch
-from EmotionDetection import emotion_detector
+from EmotionDetection.emotion_detection import emotion_detector
 
 
 class TestEmotionDetector(unittest.TestCase):
@@ -48,6 +48,27 @@ class TestEmotionDetector(unittest.TestCase):
         result = emotion_detector("I am really angry and furious")
         self.assertEqual(result["dominant_emotion"], "anger")
         self.assertIsNotNone(result["anger"])
+
+    @patch('EmotionDetection.emotion_detection.requests.post')
+    def test_emotion_detector_disgust(self, mock_post):
+        """Test detection of disgust emotion."""
+        mock_post.return_value.status_code = 200
+        mock_post.return_value.json.return_value = {
+            "emotionPredictions": [
+                {
+                    "emotion": {
+                        "anger": 0.0,
+                        "disgust": 0.92,
+                        "fear": 0.05,
+                        "joy": 0.0,
+                        "sadness": 0.03
+                    }
+                }
+            ]
+        }
+        result = emotion_detector("I am disgusted and repulsed")
+        self.assertEqual(result["dominant_emotion"], "disgust")
+        self.assertIsNotNone(result["disgust"])
 
     @patch('EmotionDetection.emotion_detection.requests.post')
     def test_emotion_detector_fear(self, mock_post):

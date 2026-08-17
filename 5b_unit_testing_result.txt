@@ -6,6 +6,8 @@ Terminal Output Showing All Tests Passing:
 
 test_emotion_detector_anger (test_emotion_detection.TestEmotionDetector.test_emotion_detector_anger)
 Test detection of anger emotion. ... ok
+test_emotion_detector_disgust (test_emotion_detection.TestEmotionDetector.test_emotion_detector_disgust)
+Test detection of disgust emotion. ... ok
 test_emotion_detector_empty_string (test_emotion_detection.TestEmotionDetector.test_emotion_detector_empty_string)
 Test with empty string input. ... ok
 test_emotion_detector_fear (test_emotion_detection.TestEmotionDetector.test_emotion_detector_fear)
@@ -16,17 +18,18 @@ test_emotion_detector_sadness (test_emotion_detection.TestEmotionDetector.test_e
 Test detection of sadness emotion. ... ok
 
 ----------------------------------------------------------------------
-Ran 5 tests in 0.004s
+Ran 6 tests in 0.004s
 
 OK
 
 ---
 
-Evidence: All 5 unit tests passed successfully. The test suite includes tests for:
+Evidence: All 6 unit tests passed successfully. The test suite includes tests for:
 1. Joy emotion detection
 2. Anger emotion detection
-3. Fear emotion detection
-4. Sadness emotion detection
-5. Empty string handling
+3. Disgust emotion detection
+4. Fear emotion detection
+5. Sadness emotion detection
+6. Empty string handling
 
 No failures or errors. The implementation meets all test requirements.
